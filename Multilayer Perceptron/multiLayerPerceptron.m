@@ -28,8 +28,9 @@ for i = 1:iterations
     theta_1 = theta_1 - alpha * theta1_grad;
     theta_2 = theta_2 - alpha * theta2_grad;
 end
+% ----------------------------------------------------
 
 [ y_pred, y_dummy ] = predict(X, theta_1, theta_2);
 fprintf('\nTraining Set Accuracy: %f\n', mean(double(y_pred == y)) * 100);
 
-% ----------------------------------------------------
+
