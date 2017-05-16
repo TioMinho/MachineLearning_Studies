@@ -42,16 +42,9 @@ neg = find(data(:,3) == 0);
 
 plt = Plot(data(pos,1), data(pos,2), data(neg,1), data(neg,2));
  
-%plt.XLabel = 'Nota da 1� Prova';
-%plt.YLabel = 'Nota da 2� Prova';
-%plt.Title = 'Avalia��o da Turma Lorem Ipsum';
-%
-%plt.LineWidth = [2,2,2];
-%plt.LineStyle = {'o', 'x', '-'};
-%
-%plt = Plot(error_Hist);
-%plt.XLabel = 'N� da Itera��o';
-%plt.YLabel = 'Erro Total';
-%plt.Title = 'Hist�rico de Erros';
-%
-%plt.export('erros.png');
+plt.XLabel = 'Nota da 1� Prova';
+plt.YLabel = 'Nota da 2� Prova';
+plt.Title = 'Avalia��o da Turma Lorem Ipsum';
+
+plt.LineWidth = [2,2];
+plt.LineStyle = {'o', 'x'};
